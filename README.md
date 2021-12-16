@@ -6,3 +6,4 @@
 3) lepsza walidacja
 4) lepsza struktura projektu (missclick przy tworzeniu sln)
 5) automapper do mapowania typów
+6) formatowanie xml / json nie działa, bo brakuje FormatFilter w kontrolerze.
