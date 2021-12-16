@@ -133,7 +133,7 @@ namespace Mille.Controllers
 			}
 
 			await _resourceRepository.Delete(existingResource);
-
+			await _resourceRepository.UnitOfWork.SaveChangesAsync();
 			_logger.LogInformation($"Resource with id: {resourceId} deleted.");
 			
 			return Ok(existingResource);
