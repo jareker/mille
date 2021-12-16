@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.13" />
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Mille.Tests\obj\Mille.Tests.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Mille.Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Mille.Tests\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="Mille.Tests\TestProject1\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Mille.Tests\TestProject1\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="Mille.Tests\TestProject1\obj\TestProject1.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Mille.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Mille.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Mille.Tests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Mille.Tests\**" />
+    </ItemGroup>
+
+</Project>
